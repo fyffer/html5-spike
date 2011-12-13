@@ -1,0 +1,25 @@
+
+
+
+body#allprojects ul.navigation li {
+    float: left;
+    display: block;
+}
+
+
+@media screen and (max-width: 1024px) {  /* iPad landscape */
+}
+
+@media screen and (max-width: 768px) { /* iPad portrait */
+
+}
+
+@media screen and (max-width: 480px) { /* iPhone landscape */
+
+}
+
+@media screen and (max-width: 320px) { /* iPhone portrait */
+
+}
+
+
