@@ -69,4 +69,12 @@ class WorkedOnsController < ApplicationController
       format.json { head :ok }
     end
   end
+
+  def worked_on_list
+    @worked_on = WorkedOn.all
+    respond_to do |format|
+      format.json { render json: @worked_on }
+    end
+  end
+
 end
