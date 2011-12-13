@@ -74,7 +74,10 @@ class ProjectsController < ApplicationController
   def projects_list
     @projects = Project.all
     test = Project.new
-    test.name = "sensis"
+    test.name = "Sensis (Yellow Pages"
+    @projects.push(test)
+    test = Project.new
+    test.name = "Jetstar"
     @projects.push(test)
     puts "@projects: #{@projects}"
     respond_to do |format|
@@ -84,11 +87,5 @@ class ProjectsController < ApplicationController
 
 end
 
-  #def index
-  #  @projects = Project.all
-  #  respond_to do |format|
-  #    format.html # index.html.erb
-  #  end
-  #end
 
 
