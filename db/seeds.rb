@@ -11,6 +11,7 @@ ace = Employee.create! :name => 'Arnold Judas Rimmer'
 dave = Employee.create! :name => 'Dave Lister'
 cat = Employee.create! :name => 'Cat'
 holly = Employee.create! :name => 'Holly'
+kryton = Employee.create! :name => 'Kryten 2X4B-523P'
 
 jet_star = Project.create!(:name => 'JetStar',
                            :overview => 'JetStar project.',
@@ -18,7 +19,19 @@ jet_star = Project.create!(:name => 'JetStar',
                            :start_date =>"12-01-2011")
 
 
-WorkedOn.create!(:employee_id => ace.id,
-                 :project_id => jet_star.id)
-WorkedOn.create!(:employee_id => dave.id,
-                 :project_id => jet_star.id)
+WorkedOn.create!(:employee => ace,
+                 :project => jet_star)
+WorkedOn.create!(:employee => dave,
+                 :project => jet_star)
+WorkedOn.create!(:employee => holly,
+                 :project => jet_star)
+
+jemena = Project.create!(:name => 'Jemena',
+                           :overview => 'Jemena Reports',
+                           :geocode => "2124.12424",
+                           :start_date =>"12-01-2011")
+
+WorkedOn.create!(:employee => cat,
+                 :project =>jemena)
+WorkedOn.create!(:employee => dave,
+                 :project => jemena)
