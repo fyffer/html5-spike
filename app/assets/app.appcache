@@ -8,4 +8,5 @@ application.html
 assets/_styles.css
 
 # js files
-assets/_javascript.js
+/assets/employees/employee-list.js
+/assets/projects/project-list.js

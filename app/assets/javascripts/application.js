@@ -7,3 +7,6 @@
 //= require jquery
 //= require jquery_ujs
 //= require_tree ./mobile
+//= require_tree ./employees
+//= require_tree ./projects
+
