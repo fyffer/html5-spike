@@ -1,0 +1,15 @@
+
+
+ul.navigation {
+    padding-left: 0px;
+    float: left;
+    width: 100%;
+}
+ul.navigation li {
+    float: left;
+    display: block;
+}
+
+li a {
+    text-decoration: none;
+}

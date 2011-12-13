@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html manifest="app.appcache">
+<html manifest="/app.appcache">
 <head>
   <meta name="viewport" content="width=device-width,initial-scale=1"/>
 
@@ -9,6 +9,15 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+
+<div data-role="header" data-position="fixed" data-theme="g">
+    <ul data-type="horizontal" data-role="controlgroup" type="horizontal" class="navigation">
+        <li class="navitem selected"><a data-role="button"  data-transition="fade" data-theme="g" href="/projects">Projects</a></li>
+        <li class="navitem"><a data-role="button" data-transition="fade" data-theme="g" href="/employees">Employees</a></li>
+        <li class="navitem"><a data-role="button"  data-transition="fade" data-theme="g" href="/map">Map</a></li>
+    </ul>
+    <div class="clear"></div>
+</div>
 
 <%= yield %>
 
