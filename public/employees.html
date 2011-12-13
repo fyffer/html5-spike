@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>  
+        <title>Where are we?</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1"/>
+        <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/2.9.0/build/reset/reset-min.css">
+
+        <style>
+
+            .clear {
+                clear: both;
+            }
+            body#allprojects ul.navigation {
+                padding-left: 0px;
+                float: left;
+            }
+
+            body#allprojects ul.navigation li {
+                float: left;
+                display: block;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                padding-left: 20px;
+                padding-right: 20px;
+                border:  1px solid black;
+                margin-right: 1px;
+                -moz-border-radius-bottomright: 10px;
+                border-bottom-right-radius: 10px 5px;
+            }
+
+            body#allprojects ul.navigation li.selected {
+                background-color: #eee;
+
+            }
+
+            body#allprojects ul.projectlist li {
+                list-style: none;
+                padding-top: 15px;
+                padding-bottom: 15px;
+            }
+
+
+@media screen and (max-width: 1024px) {  /* iPad landscape */
+}
+
+@media screen and (max-width: 768px) { /* iPad portrait */
+
+}
+
+@media screen and (max-width: 480px) { /* iPhone landscape */
+
+}
+
+@media screen and (max-width: 320px) { /* iPhone portrait */
+
+}
+
+        </style>
+
+    </head>
+    <body id="allprojects">
+        <ul class="navigation">
+            <li class="navitem selected">Projects</li>
+            <li class="navitem">Employees</li>
+            <li class="navitem">Map</li>
+        </ul>
+        <div class="clear"></div>
+
+        <ul class="projectlist">
+            <li class="project">Sensis (Yellow Pages)</li>
+            <li class="project">Sensis (White Pages)</li>
+            <li class="project">JetStar</li>
+            <li class="project">Jemena (CABS)</li>
+        </ul>
+        <div class="clear"></div>
+
+    </body>
+</html>
