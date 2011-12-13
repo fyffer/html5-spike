@@ -69,4 +69,25 @@ class ProjectsController < ApplicationController
       format.json { head :ok }
     end
   end
+
+  def projects_list
+    @projects = Project.all
+    test = Project.new
+    test.name = "sensis"
+    @projects.push(test)
+    puts "@projects: #{@projects}"
+    respond_to do |format|
+      format.json { render json: @projects }
+    end
+  end
+
 end
+
+  #def index
+  #  @projects = Project.all
+  #  respond_to do |format|
+  #    format.html # index.html.erb
+  #  end
+  #end
+
+
