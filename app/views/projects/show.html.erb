@@ -1,0 +1,20 @@
+<div data-role="header" data-position="fixed" data-theme="g">
+  <ul class="navigation">
+    <li data-role="button" data-inline="true" data-theme="g" class="navitem selected">
+  <%= link_to('Back', {:controller => :projects, :action => :show}) %>
+  </li>
+  </ul>
+  <div class="clear"></div>
+</div>
+
+<div data-role="content">
+  <div><%= @project.name %> Project</div>
+  <canvas id="canvas" width="300" height="400"
+          style="border:1px dotted;float:left" onclick="draw();">
+    Canvas is not supported
+  </canvas>
+</div>
+
+<div class="clear"></div>
+
+<script type="text/javascript" src="/assets/projects/project-graph.js"/>

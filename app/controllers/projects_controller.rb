@@ -15,6 +15,7 @@ class ProjectsController < ApplicationController
     @project = Project.find(params[:id])
 
     respond_to do |format|
+      format.html # show.html.erb
       format.json { render json: @project }
     end
   end
@@ -110,6 +111,3 @@ class ProjectsController < ApplicationController
   end
 
 end
-
-
-
