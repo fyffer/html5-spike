@@ -4,7 +4,7 @@ class EmployeesController < ApplicationController
     @employees = Employee.all
 
     respond_to do |format|
-      format.html # index.html.erb
+      format.html
       #format.json { render json: @employees }
     end
   end
