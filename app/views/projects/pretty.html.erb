@@ -1,13 +1,5 @@
-<div data-role="header" data-position="fixed" data-theme="g">
-  <ul class="navigation">
-    <li data-role="button" data-inline="true" data-theme="g" class="navitem selected">Projects</li>
-    <li data-role="button" data-inline="true" data-theme="g" class="navitem gradient-bg">Employees</li>
-    <li data-role="button" data-inline="true" data-theme="g" class="navitem">Map</li>
-  </ul>
-  <div class="clear"></div>
-</div>
-<script type="text/javascript">
 
+<script type="text/javascript">
 $(function() {
     var points = [], numPoints = 100, i, canvas, context, width, height, gravity = 0.1, emitter;
 
@@ -79,12 +71,9 @@ $(function() {
         draw();
     }, 1000/24);
 });
+</script>
 
-    </script>
-
-<div data-role="content">
-  <canvas id="canvas">Canvas is not supported</canvas>
-  <input id="canvasDraw" type="button" value="Canvas Draw" />
+<div data-role="content" style="background-color:#000000">
+  <canvas id="canvas" width="200" height="300"/>
 </div>
-
 <div class="clear"></div>
