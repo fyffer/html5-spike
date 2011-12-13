@@ -16,6 +16,11 @@ $("body").live('pageinit',function(event) {
                    $("ul.projectlist").listview('refresh');
                }
             );
+            $.getJSON("worked_on_list.json",  {cache: false},
+               function(json){
+                   localStorage.setItem("worked_on", JSON.stringify(json));
+               }
+            );
         } else {
             //get data from localStorage
             $("ul.projectlist").html("");
