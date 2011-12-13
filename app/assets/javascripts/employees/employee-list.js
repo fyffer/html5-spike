@@ -1,14 +1,10 @@
 
 $("body").live('pageinit',function(event){
 
-    console.log("anything???");
-
     if ($("ul.employeelist").length > 0) {
 
-        console.log("run employee javascript");
-
         if (navigator.onLine) {
-
+            $("ul.employeelist").html("");
             $.getJSON("employee_list.json",  {cache: false},
                function(json){
                    localStorage.setItem("employees", JSON.stringify(json));
@@ -21,8 +17,8 @@ $("body").live('pageinit',function(event){
                }
             );
         } else {
-            console.log("offline, get data from local storage");
             //get data from localStorage
+            $("ul.employeelist").html("");
             var json = JSON.parse(localStorage.getItem("employees"));
             console.log(typeof json);
             $.each(json, function(index) {

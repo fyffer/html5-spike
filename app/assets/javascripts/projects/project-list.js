@@ -3,10 +3,9 @@ $("body").live('pageinit',function(event) {
 
     if ($("ul.projectlist").length > 0) {
 
-        console.log("run project javascript");
-
         if (navigator.onLine) {
 
+            $("ul.projectlist").html("");
             $.getJSON("project_list.json",  {cache: false},
                function(json){
                    localStorage.setItem("projects", JSON.stringify(json));
@@ -19,6 +18,7 @@ $("body").live('pageinit',function(event) {
             );
         } else {
             //get data from localStorage
+            $("ul.projectlist").html("");
             console.log("offline, get data from local storage");
             //get data from localStorage
             var json = JSON.parse(localStorage.getItem("employees"));
