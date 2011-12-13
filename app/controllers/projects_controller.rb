@@ -79,6 +79,30 @@ class ProjectsController < ApplicationController
     test = Project.new
     test.name = "Jetstar"
     @projects.push(test)
+    test = Project.new
+    test.name = "Jetstar"
+    @projects.push(test)
+    test = Project.new
+    test.name = "Jetstar"
+    @projects.push(test)
+    test = Project.new
+    test.name = "Jetstar"
+    @projects.push(test)
+    test = Project.new
+    test.name = "Jetstar"
+    @projects.push(test)
+    test = Project.new
+    test.name = "Jetstar"
+    @projects.push(test)
+    test = Project.new
+    test.name = "Jetstar"
+    @projects.push(test)
+    test = Project.new
+    test.name = "Jetstar"
+    @projects.push(test)
+    test = Project.new
+    test.name = "Jetstar"
+    @projects.push(test)
     puts "@projects: #{@projects}"
     respond_to do |format|
       format.json { render json: @projects }
